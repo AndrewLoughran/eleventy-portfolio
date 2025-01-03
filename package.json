@@ -1,0 +1,24 @@
+{
+  "name": "eleventy-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewLoughran/eleventy-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/AndrewLoughran/eleventy-portfolio/issues"
+  },
+  "homepage": "https://github.com/AndrewLoughran/eleventy-portfolio#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
