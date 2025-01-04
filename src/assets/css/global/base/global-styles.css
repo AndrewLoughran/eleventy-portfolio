@@ -13,7 +13,7 @@ html {
   body {
     display: flex;
     flex-direction: column;
-    font-family: var(--font-base);
+    font-family: var(--font-base); 
     font-size: var(--size-step-0);
     font-weight: var(--font-regular);
     font-size-adjust: from-font;
