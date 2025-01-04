@@ -1,7 +1,9 @@
 {% extends "./base.html" %}
 {% block content %}
 <article>
-	<h1>{{ title }}</h1>
+	<h1>{{ name }}</h1>
+	<h4>{{ occupation }}</h4>
+	Test content!
 	{{ content | safe }}
 </article>
 {% endblock %}

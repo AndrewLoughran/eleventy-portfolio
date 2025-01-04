@@ -4,6 +4,9 @@ export default async function(eleventyConfig) {
     eleventyConfig.setOutputDirectory("dist");
     eleventyConfig.setIncludesDirectory("_includes");
     eleventyConfig.setLayoutsDirectory("_layouts");
+
+    eleventyConfig.addPassthroughCopy("src/assets/fonts");
+    eleventyConfig.addPassthroughCopy("src/assets/css/**/*.css");
 };
 
 export const config = {
