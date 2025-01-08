@@ -6,7 +6,7 @@ dotenv.config();
 // import {getAllPosts, onlyMarkdown, tagList} from './src/_config/collections.js';
 import events from './src/_config/events.js';
 import filters from './src/_config/filters.js';
-// import plugins from './src/_config/plugins.js';
+import plugins from './src/_config/plugins.js';
 // import shortcodes from './src/_config/shortcodes.js';
 
 export default async function(eleventyConfig) {
@@ -14,25 +14,25 @@ export default async function(eleventyConfig) {
     eleventyConfig.addWatchTarget('./src/_includes/**/*.{webc}');
 
     // ---------------------  Plugins
-    // eleventyConfig.addPlugin(plugins.htmlConfig);
-    // eleventyConfig.addPlugin(plugins.cssConfig);
+    eleventyConfig.addPlugin(plugins.htmlConfig);
+    eleventyConfig.addPlugin(plugins.cssConfig);
     // eleventyConfig.addPlugin(plugins.jsConfig);
     // eleventyConfig.addPlugin(plugins.drafts);
 
-    // eleventyConfig.addPlugin(plugins.EleventyRenderPlugin);
-    // eleventyConfig.addPlugin(plugins.rss);
-    // eleventyConfig.addPlugin(plugins.syntaxHighlight);
+    eleventyConfig.addPlugin(plugins.EleventyRenderPlugin);
+    eleventyConfig.addPlugin(plugins.rss);
+    eleventyConfig.addPlugin(plugins.syntaxHighlight);
 
-    // eleventyConfig.addPlugin(plugins.webc, {
-    //     components: ['./src/_includes/webc/*.webc'],
-    //     useTransform: true
-    // });
+    eleventyConfig.addPlugin(plugins.webc, {
+        components: ['./src/_includes/webc/*.webc'],
+        useTransform: true
+    });
 
     // ---------------------  bundle
     eleventyConfig.addBundle('css', {hoist: true});
 
     // 	--------------------- Library and Data
-    // eleventyConfig.setLibrary('md', plugins.markdownLib);
+    eleventyConfig.setLibrary('md', plugins.markdownLib);
     eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
 
     // --------------------- Filters
@@ -53,7 +53,7 @@ export default async function(eleventyConfig) {
     // --------------------- Passthrough File Copy
 
     // -- same path
-    ['src/assets/fonts/', "src/assets/css/**/*.css"].forEach(path =>
+    ['src/assets/fonts/'].forEach(path =>
         eleventyConfig.addPassthroughCopy(path)
     );
 
