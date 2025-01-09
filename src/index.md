@@ -25,6 +25,20 @@ You will like those projects!
 
 ---
 
+## Tables
+
+| Technology | Fun fact                                                                                                                                    |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| HTML       | HTML (Hypertext Markup Language) was created by Sir Tim Berners-Lee in 1991 as a way to structure and link documents on the World Wide Web. |
+| CSS        | It's called "cascading" because styles can cascade down from parent elements to their children, allowing for inheritance and overriding.    |
+| JavaScript | TypeError: null is not an object      
+
+```js
+function myFunction() {
+	return true;
+}
+```
+
 # h1 Heading 8-)
 ## h2 Heading
 ### h3 Heading
