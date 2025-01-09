@@ -14,14 +14,8 @@ occupation: 'Graduate Computing Scientist'
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum ut nisi dolorum cum suscipit ea, nam voluptates commodi veniam fugiat minima consequatur tempora vero necessitatibus qui. Eligendi, fugiat cumque.
 
 ---
-__Advertisement :)__
 
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
-
-You will like those projects!
+{% image "./src/assets/images/UoG_colour.png", "University of Glasgow logo" %}
 
 ---
 
