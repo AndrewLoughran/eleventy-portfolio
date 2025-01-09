@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "npx eleventy --serve",
-    "clean": "rimraf dist src/_includes/css"
+    "clean": "rimraf dist src/_includes/css",
+    "build": "npm run clean && npm run build:11ty",
+    "build:11ty": "ELEVENTY_ENV=production eleventy"
   },
   "repository": {
     "type": "git",
