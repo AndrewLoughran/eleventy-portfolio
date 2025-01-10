@@ -7,12 +7,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<title>{{ title }}</title>
+
+		{# synchronous js #}
+		{% include "head/js-inline.njk" %}
 		
     	 <link rel="stylesheet" href="/assets/css/global/global.css?{{ assetHash }}" /> 
 		 <link rel="stylesheet" href="/assets/css/bundle/table.css">
 		 <link rel="stylesheet" href="/assets/css/bundle/post.css">
 		 <link rel="stylesheet" href="/assets/css/bundle/footnotes.css">
     	{# {% include "head/css-inline.njk" %} #}
+
+		{# defer js #}
+		{% include "head/js-defer.njk" %}
 
 	</head>
 	<body class="{{ layout }}">
