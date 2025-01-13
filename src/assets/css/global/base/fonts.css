@@ -35,6 +35,6 @@
     font-weight: 900;
     src:
       local(''),
-      url('/assets/fonts/eurostile/eurostile.ttf') format('truetype');
+      url('/assets/fonts/eurostile/eurostile.woff2') format('woff2');
   }
   
