@@ -11,11 +11,15 @@
     	 <link rel="stylesheet" href="/assets/css/global/global.css?{{ assetHash }}" /> 
 		 <link rel="stylesheet" href="/assets/css/bundle/table.css">
 		 <link rel="stylesheet" href="/assets/css/bundle/post.css">
+		 <link rel="stylesheet" href="/assets/css/bundle/footnotes.css">
     	{# {% include "head/css-inline.njk" %} #}
 
 	</head>
 	<body class="{{ layout }}">
-		
-		<main id="main" class="flow">{{ content | safe }}</main>
+		<main id="main" class="flow">
+			
+				{{ content | safe }}
+			
+		</main>
 	</body>
 </html>
