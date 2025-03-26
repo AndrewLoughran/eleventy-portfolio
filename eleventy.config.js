@@ -1,3 +1,7 @@
+// register dotenv for process.env.* variables to pickup
+import dotenv from 'dotenv';
+dotenv.config();
+
 export default async function(eleventyConfig) {
 	// Configure Eleventy
     eleventyConfig.setInputDirectory("src");
