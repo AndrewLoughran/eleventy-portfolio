@@ -1,4 +1,5 @@
 <!-- component composition by: https://github.com/zachleat/zachleat.com -->
+<!-- https://www.zachleat.com/web/youtube-embeds/ -->
 
 <script webc:setup>
   function getPosterImage(slug, posterSize = 'auto') {
