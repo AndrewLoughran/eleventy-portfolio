@@ -3,14 +3,15 @@ title: 'Hello world'
 layout: 'index.html'
 name: 'Andrew Loughran'
 occupation: 'Graduate Computing Scientist'
+youtube: true
 ---
 
 
 <h1 class="gradient-text-linear">{{ name }}</h1>
 <h3>{{ occupation }}</h3>
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum ut nisi dolorum cum suscipit ea, nam voluptates commodi veniam fugiat minima consequatur tempora vero necessitatibus qui. Eligendi, fugiat cumque.
-</p>
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum ut nisi dolorum cum suscipit ea, nam voluptates commodi veniam fugiat minima consequatur tempora vero necessitatibus qui. Eligendi, fugiat cumque.
+
 
 ---
 
@@ -33,7 +34,10 @@ Footnote 2 link[^second].
 
 [^second]: Footnote text.
 
-\*[HTML]: Hyper Text Markup Language
+
+<div>
+<custom-youtube @slug="e3NoAq5hIZ4" @label="Homer in the land of chocolate"></custom-youtube>
+</div>
 
 
 

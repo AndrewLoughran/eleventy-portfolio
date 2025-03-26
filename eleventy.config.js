@@ -16,7 +16,7 @@ export default async function(eleventyConfig) {
     // ---------------------  Plugins
     eleventyConfig.addPlugin(plugins.htmlConfig);
     eleventyConfig.addPlugin(plugins.cssConfig);
-    // eleventyConfig.addPlugin(plugins.jsConfig);
+    eleventyConfig.addPlugin(plugins.jsConfig);
     // eleventyConfig.addPlugin(plugins.drafts);
 
     eleventyConfig.addPlugin(plugins.EleventyRenderPlugin);
@@ -56,6 +56,14 @@ export default async function(eleventyConfig) {
     ['src/assets/fonts/'].forEach(path =>
         eleventyConfig.addPassthroughCopy(path)
     );
+
+    eleventyConfig.addPassthroughCopy({
+        // -- to root
+        //'src/assets/images/favicon/*': '/',
+    
+        // -- node_modules
+        'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/components/`
+      });
 
 	// Configure Eleventy
     eleventyConfig.setInputDirectory("src");
