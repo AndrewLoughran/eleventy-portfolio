@@ -15,7 +15,7 @@ occupation: 'Graduate Computing Scientist'
 
 ---
 
-{% image "./src/assets/images/UoG_colour.png", "University of Glasgow logo" %}
+{% image "./src/assets/images/UoG_colour.png", "University of Glasgow logo", null, null, null, null, [200, 400] %}
 
 ---
 
