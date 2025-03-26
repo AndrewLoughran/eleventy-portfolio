@@ -7,10 +7,10 @@ youtube: true
 ---
 
 
-<h1 class="gradient-text-linear">{{ name }}</h1>
+<h1>{{ name }}</h1>
 <h3>{{ occupation }}</h3>
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum ut nisi dolorum cum suscipit ea, nam voluptates commodi veniam fugiat minima consequatur tempora vero necessitatibus qui. Eligendi, fugiat cumque.
+Lorem <strong>ipsum</strong> dolor sit amet consectetur adipisicing elit. Aperiam rerum ut nisi dolorum cum suscipit ea, nam voluptates commodi veniam fugiat minima consequatur tempora vero necessitatibus qui. Eligendi, fugiat cumque.
 
 
 ---
