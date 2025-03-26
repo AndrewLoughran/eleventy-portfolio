@@ -7,7 +7,7 @@ dotenv.config();
 import events from './src/_config/events.js';
 import filters from './src/_config/filters.js';
 import plugins from './src/_config/plugins.js';
-// import shortcodes from './src/_config/shortcodes.js';
+import shortcodes from './src/_config/shortcodes.js';
 
 export default async function(eleventyConfig) {
     eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg}');
@@ -46,9 +46,9 @@ export default async function(eleventyConfig) {
     eleventyConfig.addFilter('slugify', filters.slugifyString);
 
     // --------------------- Shortcodes
-    // eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);
-    // eleventyConfig.addShortcode('image', shortcodes.imageShortcode);
-    // eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
+    eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);
+    eleventyConfig.addShortcode('image', shortcodes.imageShortcode);
+    eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
     // --------------------- Passthrough File Copy
 
