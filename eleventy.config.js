@@ -22,7 +22,7 @@ export default async function(eleventyConfig) {
     eleventyConfig.addPlugin(plugins.EleventyRenderPlugin);
     eleventyConfig.addPlugin(plugins.rss);
     eleventyConfig.addPlugin(plugins.syntaxHighlight);
-
+    eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin);
     eleventyConfig.addPlugin(plugins.webc, {
         components: ['./src/_includes/webc/*.webc'],
         useTransform: true
