@@ -13,6 +13,6 @@
 @import-glob 'utilities/*.css'; 
 
 /* debugging */
-/* @import-glob 'tests/*.css'; */
+/* @import-glob 'tests/*.css';  */
 
 @import 'tailwindcss/utilities';
