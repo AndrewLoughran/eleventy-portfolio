@@ -15,7 +15,7 @@ Lorem <strong>ipsum</strong> dolor sit amet consectetur adipisicing elit. Aperia
 
 ---
 
-<img src="/assets/images/UoG_colour.png" alt="University of Glasgow logo" width=400>
+<img src="/assets/images/UoG_keyline.png" alt="University of Glasgow logo" width=400>
 
 **BSc Computing Science**
 
