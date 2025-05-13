@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 //  config import
-// import {getAllPosts, onlyMarkdown, tagList} from './src/_config/collections.js';
+import {getAllPosts, onlyMarkdown, tagList} from './src/_config/collections.js';
 import events from './src/_config/events.js';
 import filters from './src/_config/filters.js';
 import plugins from './src/_config/plugins.js';
@@ -12,6 +12,9 @@ import shortcodes from './src/_config/shortcodes.js';
 export default async function(eleventyConfig) {
     eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg}');
     eleventyConfig.addWatchTarget('./src/_includes/**/*.{webc}');
+
+    // ---------------------  Collections
+    eleventyConfig.addCollection('allPosts', getAllPosts);
 
     // ---------------------  Plugins
     eleventyConfig.addPlugin(plugins.htmlConfig);
@@ -74,7 +77,7 @@ export default async function(eleventyConfig) {
 };
 
 export const config = {
-    markdownTemplateEngine: 'njk',
-    dataTemplateEngine: 'njk',
-    htmlTemplateEngine: 'njk',
+    markdownTemplateEngine: "njk",
+    //dataTemplateEngine: 'njk',
+    htmlTemplateEngine: "njk",
   };

@@ -1,4 +1,5 @@
 ---
+permalink: /index.html
 title: 'Hello world'
 layout: 'index.html'
 name: 'Andrew Loughran'
